@@ -1,0 +1,14 @@
+{% extends 'starter.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block title %} <h3>Name: {{form.first_name}}</h3> {% endblock %}
+
+{% block content%}
+<div class="cols-6">
+    <form method="POST">
+      {% csrf_token %}
+      {{ form|crispy }}
+      <input type="submit" class="btn btn-success" value="Edit Contact">
+    </form>
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends 'starter.html' %}
+{% block title %} <h3> Product List </h3> {% endblock %}
+{% block content%}
+<div class="div-align">
+        <div class="offset-1 col-10 list-div">
+            <a id="add-link" href="/product/create/">
+                <div class="col-2 add-div">
+                    <i class="fas fa-plus"></i>
+                </div>
+            </a>
+        </div>
+        <div class="col-9 search-div">
+            <form method="GET" id="search-form">
+                <input class="form-control" type="text" name="search" id="search" placeholder="Enter item to search" value="{{ request.GET.search }}">
+                <i class="fas fa-search" id="search-btn"></i>
+            </form>
+        </div>
+    </div>
+    <ul class="product-list">
+        {% if messages %}
+            {% for message in messages %}
+            <div class="alert alert-{{ message.tags }} alert-dismissible" role="alert">
+                {{ message }}
+            </div>
+            {% endfor %}
+        {% endif %}
+        {% for product in products %}
+        <li class="product-item">
+            <span><a href="/product/item/{{product.id}}">{{product.name}}</a></span>
+            <a href="/product/delete/{{product.id}}" class="delete-btn"><span><i class="fas fa-trash"></i></span></a>
+            <a href="/product/update/{{product.id}}"><span><i class="fas fa-edit"></i></span></a>
+        </li>
+        {% endfor %}
+    </ul>
+        <div class="pagination">
+            <span class="step-links">
+                {% if products.has_previous %}
+                    <a href="?page={{ products.previous_page_number }}"><i class="fas fa-arrow-left"></i></a>
+                {% endif %}
+                
+                {% if products.paginator.num_pages %}
+                <span class="current">
+                    {{ products.number}} of {{ products.paginator.num_pages }}
+                </span>
+                {% endif %}
+
+                {% if products.has_next %}
+                    <a href="?page={{ products.next_page_number }}"><i class="fas fa-arrow-right"></i></a>
+                {% endif %}
+            </span>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,146 @@
+[
+    {
+        "model": "customers.customer",
+        "pk": 1,
+        "fields": {
+            "first_name": "Cleitão",
+            "last_name": "Bom de Guerra",
+            "zip_code": "13092106",
+            "address": "Rua Gustavo Ambrust",
+            "city": "Campinas",
+            "district": "Cambuí",
+            "cpf": "13170660063",
+            "house_number": "36",
+            "email": "cleitao.bom.de.guerra@gmail.com",
+            "phone": "19991919191",
+            "user": 1,
+            "created_at": "2023-01-18T17:47:26.814Z"
+        }
+    },
+    {
+        "model": "customers.customer",
+        "pk": 2,
+        "fields": {
+            "first_name": "Jubirildo",
+            "last_name": "Oliveira",
+            "zip_code": "13087901",
+            "address": "Avenida Guilherme Campos, 500",
+            "city": "Campinas",
+            "district": "Jardim Santa Genebra",
+            "cpf": "53828493076",
+            "house_number": "2500",
+            "email": "jubirildo.oliveira@teste.com.br",
+            "phone": "19992929292",
+            "user": 1,
+            "created_at": "2023-01-18T22:29:20.608Z"
+        }
+    },
+    {
+        "model": "customers.customer",
+        "pk": 3,
+        "fields": {
+            "first_name": "Jonas",
+            "last_name": "Barroso",
+            "zip_code": "13056468",
+            "address": "Rua Camacã",
+            "city": "Campinas",
+            "district": "Parque Universitário de Viracopos",
+            "cpf": "64008398015",
+            "house_number": "777",
+            "email": "jonas.barroso@teste.com.br",
+            "phone": "199999999999",
+            "user": 1,
+            "created_at": "2023-01-19T21:49:22.564Z"
+        }
+    },
+    {
+        "model": "customers.customer",
+        "pk": 4,
+        "fields": {
+            "first_name": "Nissin",
+            "last_name": "Orfale",
+            "zip_code": "87050900",
+            "address": "Avenida Guedner, 1610",
+            "city": "Maringá",
+            "district": "Zona 08",
+            "cpf": "50243581041",
+            "house_number": "1610",
+            "email": "nissin.orfale@teste.com",
+            "phone": "044891929394",
+            "user": 1,
+            "created_at": "2023-01-20T16:49:33.077Z"
+        }
+    },
+    {
+        "model": "customers.customer",
+        "pk": 5,
+        "fields": {
+            "first_name": "Cj",
+            "last_name": "Teste",
+            "zip_code": "13056468",
+            "address": "Rua Camacã",
+            "city": "Campinas",
+            "district": "Parque Universitário de Viracopos",
+            "cpf": "35097675002",
+            "house_number": "6969",
+            "email": "cj.teste@teste.com.br",
+            "phone": "12991919191",
+            "user": 2,
+            "created_at": "2023-01-20T17:32:43.510Z"
+        }
+    },
+    {
+        "model": "customers.customer",
+        "pk": 6,
+        "fields": {
+            "first_name": "Clodovil",
+            "last_name": "Teste",
+            "zip_code": "13056468",
+            "address": "Rua Camacã",
+            "city": "Campinas",
+            "district": "Parque Universitário de Viracopos",
+            "cpf": "60855291044",
+            "house_number": "666",
+            "email": "clodovil.jabiraca@teste.com.br",
+            "phone": "199999999999",
+            "user": 2,
+            "created_at": "2023-01-21T13:00:51.821Z"
+        }
+    },
+    {
+        "model": "customers.customer",
+        "pk": 7,
+        "fields": {
+            "first_name": "Cleber",
+            "last_name": "da Silva",
+            "zip_code": "13092106",
+            "address": "Rua Gustavo Ambrust",
+            "city": "Campinas",
+            "district": "Nova Campinas",
+            "cpf": "23314747020",
+            "house_number": "666",
+            "email": "clebim.monstro@teste.com.br",
+            "phone": "11991919191",
+            "user": 2,
+            "created_at": "2023-01-21T13:03:24.699Z"
+        }
+    },
+    {
+        "model": "customers.customer",
+        "pk": 8,
+        "fields": {
+            "first_name": "TesteDelivery",
+            "last_name": "Teste",
+            "zip_code": "13092106",
+            "address": "Rua Gustavo Ambrust",
+            "city": "Campinas",
+            "district": "Nova Campinas",
+            "cpf": "02404775022",
+            "house_number": "123",
+            "email": "teste@teste.com.br",
+            "phone": "199999999999",
+            "user": 2,
+            "created_at": "2023-01-23T12:07:39.920Z"
+        }
+    }
+]
